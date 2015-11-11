@@ -279,25 +279,25 @@ public class Panel_entrada extends JFrame implements ActionListener{
 									int posicion_pila_y = (int)aux1.get_y();
 									if((posicion_pila_x == posicion_x_pirata_aux-1)&&(posicion_pila_y == posicion_y_pirata_aux))
 									{
-										ImageIcon imagen_pirata3 = new ImageIcon(getClass().getResource("/Images/flecha_arriba.png"));
+										ImageIcon imagen_pirata3 = new ImageIcon(getClass().getResource("/Images/arriba.jpg"));
 										ImageIcon imagen_escalada3_1= new ImageIcon(imagen_pirata3.getImage().getScaledInstance(ancho, alto, java.awt.Image.SCALE_FAST));
 										mCasillas[posicion_x_pirata_aux][posicion_y_pirata_aux].setIcon(imagen_escalada3_1);
 									}
 									if((posicion_pila_x == posicion_x_pirata_aux+1)&&(posicion_pila_y == posicion_y_pirata_aux))
 									{
-										ImageIcon imagen_pirata3 = new ImageIcon(getClass().getResource("/Images/flecha_abajo.png"));
+										ImageIcon imagen_pirata3 = new ImageIcon(getClass().getResource("/Images/abajo.jpg"));
 										ImageIcon imagen_escalada3_1= new ImageIcon(imagen_pirata3.getImage().getScaledInstance(ancho, alto, java.awt.Image.SCALE_FAST));
 										mCasillas[posicion_x_pirata_aux][posicion_y_pirata_aux].setIcon(imagen_escalada3_1);
 									}
 									if((posicion_pila_x == posicion_x_pirata_aux)&&(posicion_pila_y==posicion_y_pirata_aux-1))
 									{
-										ImageIcon imagen_pirata3 = new ImageIcon(getClass().getResource("/Images/flecha_izquierda.png"));
+										ImageIcon imagen_pirata3 = new ImageIcon(getClass().getResource("/Images/izquierda.jpg"));
 										ImageIcon imagen_escalada3_1= new ImageIcon(imagen_pirata3.getImage().getScaledInstance(ancho, alto, java.awt.Image.SCALE_FAST));
 										mCasillas[posicion_x_pirata_aux][posicion_y_pirata_aux].setIcon(imagen_escalada3_1);
 									}
 									if((posicion_pila_x == posicion_x_pirata_aux)&&(posicion_pila_y == posicion_y_pirata_aux+1))
 									{
-										ImageIcon imagen_pirata3 = new ImageIcon(getClass().getResource("/Images/flecha_derecha.png"));
+										ImageIcon imagen_pirata3 = new ImageIcon(getClass().getResource("/Images/derecha.jpg"));
 										ImageIcon imagen_escalada3_1= new ImageIcon(imagen_pirata3.getImage().getScaledInstance(ancho, alto, java.awt.Image.SCALE_FAST));
 										mCasillas[posicion_x_pirata_aux][posicion_y_pirata_aux].setIcon(imagen_escalada3_1);
 									}
@@ -317,7 +317,7 @@ public class Panel_entrada extends JFrame implements ActionListener{
 								System.out.print("Entre en case 1");
 
 
-								ImageIcon imagen_pirata = new ImageIcon(getClass().getResource("/Images/flecha_arriba.png"));
+								ImageIcon imagen_pirata = new ImageIcon(getClass().getResource("/Images/arriba.jpg"));
 								ImageIcon imagen_escalada= new ImageIcon(imagen_pirata.getImage().getScaledInstance(ancho, alto, java.awt.Image.SCALE_FAST));
 								mCasillas[posicion_x_pirata_aux][posicion_y_pirata_aux].setIcon(imagen_escalada);	
 								mCasillas_visitados[posicion_x_pirata_aux][posicion_y_pirata_aux]=true;
@@ -334,7 +334,7 @@ public class Panel_entrada extends JFrame implements ActionListener{
 								//Actualizo matriz visitados
 								mCasillas_visitados[posicion_x_pirata_aux][posicion_y_pirata_aux]=true;
 
-								ImageIcon imagen_pirata1 = new ImageIcon(getClass().getResource("/Images/flecha_abajo.png"));
+								ImageIcon imagen_pirata1 = new ImageIcon(getClass().getResource("/Images/abajo.jpg"));
 								ImageIcon imagen_escalada1_1= new ImageIcon(imagen_pirata1.getImage().getScaledInstance(ancho, alto, java.awt.Image.SCALE_FAST));
 								mCasillas[posicion_x_pirata_aux][posicion_y_pirata_aux].setIcon(imagen_escalada1_1);
 								p.push(posicion_x_pirata_aux, posicion_y_pirata_aux);
@@ -350,7 +350,7 @@ public class Panel_entrada extends JFrame implements ActionListener{
 								//Actualizo matriz visitados
 								mCasillas_visitados[posicion_x_pirata_aux][posicion_y_pirata_aux]=true;
 
-								ImageIcon imagen_pirata2 = new ImageIcon(getClass().getResource("/Images/flecha_izquierda.png"));
+								ImageIcon imagen_pirata2 = new ImageIcon(getClass().getResource("/Images/izquierda.jpg"));
 								ImageIcon imagen_escalada2_1= new ImageIcon(imagen_pirata2.getImage().getScaledInstance(ancho, alto, java.awt.Image.SCALE_FAST));
 								mCasillas[posicion_x_pirata_aux][posicion_y_pirata_aux].setIcon(imagen_escalada2_1);
 
@@ -368,7 +368,7 @@ public class Panel_entrada extends JFrame implements ActionListener{
 								//Actualizo matriz visitados
 								mCasillas_visitados[posicion_x_pirata_aux][posicion_y_pirata_aux]=true;
 
-								ImageIcon imagen_pirata3 = new ImageIcon(getClass().getResource("/Images/flecha_derecha.png"));
+								ImageIcon imagen_pirata3 = new ImageIcon(getClass().getResource("/Images/derecha.jpg"));
 								ImageIcon imagen_escalada3_1= new ImageIcon(imagen_pirata3.getImage().getScaledInstance(ancho, alto, java.awt.Image.SCALE_FAST));
 								mCasillas[posicion_x_pirata_aux][posicion_y_pirata_aux].setIcon(imagen_escalada3_1);
 
